@@ -105,6 +105,3 @@ Open a PR 🚀
 📜 License
 
 This project is open-source under the MIT License.
-
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=ajayduraisamy&label=Repo+Views&color=blueviolet&style=flat-square" alt="views"/> </p>
-```
