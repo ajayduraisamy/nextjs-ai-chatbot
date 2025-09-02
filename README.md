@@ -1,62 +1,110 @@
-<a href="https://chat.vercel.ai/">
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Chat SDK</h1>
-</a>
+✨ A clear project intro (what this repo is and why it’s useful)
+
+🛠️ Features section (what’s included in the template)
+
+⚡ Installation steps (how to run it locally)
+
+🚀 Deployment steps (Vercel one-click + manual option)
+
+📊 Tech stack badges (Next.js, Tailwind, shadcn, AI SDK, etc.)
+
+🎥 Optional demo GIF or screenshot (app preview)
+
+🤝 Contributing guidelines (if open-source)
+
+# 🤖 Next.js AI Chatbot Template
 
 <p align="center">
-    Chat SDK is a free, open-source template built with Next.js and the AI SDK that helps you quickly build powerful chatbot applications.
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" />
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI%20SDK-FF6F00?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel" />
 </p>
 
-<p align="center">
-  <a href="https://chat-sdk.dev"><strong>Read Docs</strong></a> ·
-  <a href="#features"><strong>Features</strong></a> ·
-  <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
-  <a href="#running-locally"><strong>Running locally</strong></a>
-</p>
-<br/>
+<p align="center">⚡ Build your own AI-powered chatbot with <b>Next.js App Router</b>, <b>AI SDK</b>, and <b>shadcn/ui</b>.</p>
 
-## Features
+---
 
-- [Next.js](https://nextjs.org) App Router
-  - Advanced routing for seamless navigation and performance
-  - React Server Components (RSCs) and Server Actions for server-side rendering and increased performance
-- [AI SDK](https://sdk.vercel.ai/docs)
-  - Unified API for generating text, structured objects, and tool calls with LLMs
-  - Hooks for building dynamic chat and generative user interfaces
-  - Supports xAI (default), OpenAI, Fireworks, and other model providers
-- [shadcn/ui](https://ui.shadcn.com)
-  - Styling with [Tailwind CSS](https://tailwindcss.com)
-  - Component primitives from [Radix UI](https://radix-ui.com) for accessibility and flexibility
-- Data Persistence
-  - [Neon Serverless Postgres](https://vercel.com/marketplace/neon) for saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) for efficient file storage
-- [Auth.js](https://authjs.dev)
-  - Simple and secure authentication
+## 🚀 Features
 
-## Model Providers
+- ⚡ **Next.js 14 (App Router)** – advanced routing, React Server Components, and server actions
+- 🧠 **AI SDK** – unified API to connect with OpenAI, Anthropic, Cohere, xAI, and more
+- 🎨 **shadcn/ui + TailwindCSS** – beautiful, accessible UI components
+- 💾 **Data persistence** – Neon Postgres (chat history) + Vercel Blob (file storage)
+- 🔐 **Authentication** – simple and secure with Auth.js
+- ☁️ **Deploy-ready** – optimized for Vercel
 
-This template ships with [xAI](https://x.ai) `grok-2-1212` as the default chat model. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
+---
 
-## Deploy Your Own
+## 📦 Getting Started
 
-You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot&env=AUTH_SECRET&envDescription=Learn+more+about+how+to+get+the+API+Keys+for+the+application&envLink=https%3A%2F%2Fgithub.com%2Fvercel%2Fai-chatbot%2Fblob%2Fmain%2F.env.example&demo-title=AI+Chatbot&demo-description=An+Open-Source+AI+Chatbot+Template+Built+With+Next.js+and+the+AI+SDK+by+Vercel.&demo-url=https%3A%2F%2Fchat.vercel.ai&products=%5B%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22ai%22%2C%22productSlug%22%3A%22grok%22%2C%22integrationSlug%22%3A%22xai%22%7D%2C%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22storage%22%2C%22productSlug%22%3A%22neon%22%2C%22integrationSlug%22%3A%22neon%22%7D%2C%7B%22type%22%3A%22integration%22%2C%22protocol%22%3A%22storage%22%2C%22productSlug%22%3A%22upstash-kv%22%2C%22integrationSlug%22%3A%22upstash%22%7D%2C%7B%22type%22%3A%22blob%22%7D%5D)
-
-## Running locally
-
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Next.js AI Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
-
-> Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various AI and authentication provider accounts.
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Link local instance with Vercel and GitHub accounts (creates `.vercel` directory): `vercel link`
-3. Download your environment variables: `vercel env pull`
+### 1️⃣ Clone the repo
 
 ```bash
-pnpm install
-pnpm dev
-```
+git clone https://github.com/ajayduraisamy/nextjs-ai-chatbot.git
+cd nextjs-ai-chatbot
 
-Your app template should now be running on [localhost:3000](http://localhost:3000).
+
+2️⃣ Install dependencies
+pnpm install
+
+3️⃣ Set up environment variables
+
+Copy .env.example → .env.local and fill in your API keys.
+⚠️ Never commit .env.local (it contains secrets).
+
+4️⃣ Run locally
+pnpm dev
+
+
+App runs on http://localhost:3000 🎉
+
+
+🚀 Deploy to Vercel
+
+One-click deploy:
+
+
+Or manually:
+
+npm i -g vercel
+vercel
+
+🛠️ Tech Stack
+
+Frontend: Next.js 14, React, TailwindCSS, shadcn/ui
+
+Backend: Next.js Server Actions, AI SDK
+
+AI Providers: OpenAI, Anthropic, Cohere, xAI (default)
+
+Database: Neon Postgres
+
+Storage: Vercel Blob
+
+Auth: Auth.js
+
+📊 Example Dataset (Optional if relevant to AI tasks)
+
+If you’re training or fine-tuning, ensure datasets are stored in /data and not pushed with secrets.
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+
+Create your feature branch (git checkout -b feature/my-feature)
+
+Commit changes (git commit -m "Added new feature")
+
+Push branch (git push origin feature/my-feature)
+
+Open a PR 🚀
+
+📜 License
+
+This project is open-source under the MIT License.
+
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=ajayduraisamy&label=Repo+Views&color=blueviolet&style=flat-square" alt="views"/> </p>
+```
